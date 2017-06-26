@@ -12,18 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import unittest
-
-# Redirect stderr to stdout to suppress output in tests
 import sys
-sys.stderr = sys.stdout
+import unittest
 
 from ament_package.dependency import Dependency
 from ament_package.exceptions import InvalidPackage
 from ament_package.package import Package
 from ament_package.person import Person
-
 from mock import Mock
+
+# Redirect stderr to stdout to suppress output in tests
+sys.stderr = sys.stdout
 
 
 class PackageTest(unittest.TestCase):
@@ -138,10 +137,24 @@ class PackageTest(unittest.TestCase):
         self.assertRaises(InvalidPackage, Package.validate, pack)
         pack.name = 'bar bza'
         self.assertRaises(InvalidPackage, Package.validate, pack)
-        pack.name = 'bar-bza'
-        self.assertRaises(InvalidPackage, Package.validate, pack)
         pack.name = 'BAR'
         self.assertRaises(InvalidPackage, Package.validate, pack)
+        # dashes should be acceptable in packages other than catkin or
+        # ament*.
+        # no build_type, so catkin is assumed per REP-140.
+        pack.name = 'bar-bza'
+        self.assertRaises(InvalidPackage, Package.validate, pack)
+        # check explicit catkin and ament_* build_types
+        build_type = Mock(tagname='build_type', attributes={}, content='catkin')
+        pack.exports = [build_type]
+        self.assertRaises(InvalidPackage, Package.validate, pack)
+        build_type.content = 'ament_cmake'
+        self.assertRaises(InvalidPackage, Package.validate, pack)
+        build_type.content = 'ament_python'
+        self.assertRaises(InvalidPackage, Package.validate, pack)
+        # check non ament/catkin build type is valid
+        build_type.content = 'cmake'
+        pack.validate()
         # check authors emails
         pack.name = 'bar'
         auth1 = Mock()
