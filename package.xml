@@ -2,13 +2,13 @@
 <?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="2">
   <name>ament_package</name>
-  <version>0.0.3</version>
+  <version>0.4.0</version>
   <description>The parser for the manifest files in the ament buildsystem.</description>
   <maintainer email="dthomas@osrfoundation.org">Dirk Thomas</maintainer>
   <license>Apache License 2.0</license>
 
-  <depend>python3-setuptools</depend>
   <depend>python3-pyparsing</depend>
+  <depend>python3-setuptools</depend>
 
   <export>
     <build_type>ament_python</build_type>
