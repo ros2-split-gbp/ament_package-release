@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='ament_package',
-    version='0.4.0',
+    version='0.5.1',
     packages=find_packages(exclude=['test']),
     zip_safe=True,
     author='Dirk Thomas',
@@ -24,7 +24,7 @@ setup(
 Ament defines metainformation for packages, their dependencies,
 and provides tooling to build these federated packages together.""",
     license='Apache License, Version 2.0',
-    tests_require=['pytest'],
+    tests_require=['flake8', 'pytest'],
     package_data={
         'ament_package': [
             'template/environment_hook/*',
