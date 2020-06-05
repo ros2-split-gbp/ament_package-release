@@ -2,15 +2,10 @@
 Changelog for package ament_package
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.9.1 (2020-05-12)
+0.8.9 (2020-06-05)
 ------------------
-* [Windows] Fix _ament_python_executable fallback code path. (`#113 <https://github.com/ament/ament_package/issues/113>`_)
-* Contributors: Dirk Thomas
-
-0.9.0 (2020-04-24)
-------------------
-* Convert format to f-string. (`#112 <https://github.com/ament/ament_package/issues/112>`_)
-* Contributors: Dirk Thomas
+* add configure-time flag to skip parent_prefix_path (`#115 <https://github.com/ament/ament_package/issues/115>`_)
+* [windows] fix _ament_python_executable fallback code path (`#113 <https://github.com/ament/ament_package/issues/113>`_)
 
 0.8.8 (2019-12-10)
 ------------------
