@@ -2,10 +2,13 @@
 Changelog for package ament_package
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.9.3 (2020-12-07)
-------------------
-* make AMENT_TRACE_SETUP_FILES output sourceable (`#120 <https://github.com/ament/ament_package/issues/120>`_) (`#121 <https://github.com/ament/ament_package/issues/121>`_)
-* Contributors: Dirk Thomas
+0.10.0 (2020-12-07)
+-------------------
+* make AMENT_TRACE_SETUP_FILES output sourceable (`#120 <https://github.com/ament/ament_package/issues/120>`_)
+* update maintainers
+* Switch ament_package to using importlib. (`#118 <https://github.com/ament/ament_package/issues/118>`_)
+* Add pytest.ini so local tests don't display warning (`#117 <https://github.com/ament/ament_package/issues/117>`_)
+* Contributors: Chris Lalancette, Dirk Thomas, Mabel Zhang
 
 0.9.2 (2020-06-05)
 ------------------
