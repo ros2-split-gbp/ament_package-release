@@ -15,8 +15,8 @@ License:        @(License)
 Source0:        %{name}-%{version}.tar.gz
 @[if NoArch]@\nBuildArch:      noarch@\n@[end if]@
 
-@[for p in Depends]Requires:       @p@\n@[end for]@
-@[for p in sorted(BuildDepends + ['python%{python3_pkgversion}-devel'])]BuildRequires:  @p@\n@[end for]@
+@[for p in sorted(Depends + ['python%{python3_pkgversion}-importlib-resources'])]Requires:       @p@\n@[end for]@
+@[for p in sorted(BuildDepends + ['python%{python3_pkgversion}-devel', 'python%{python3_pkgversion}-importlib-resources'])]BuildRequires:  @p@\n@[end for]@
 @[for p in Conflicts]Conflicts:      @p@\n@[end for]@
 @[for p in Replaces]Obsoletes:      @p@\n@[end for]@
 @[for p in Provides]Provides:       @p@\n@[end for]@
