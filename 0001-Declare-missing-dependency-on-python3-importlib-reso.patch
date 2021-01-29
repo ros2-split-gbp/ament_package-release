@@ -1,4 +1,4 @@
-From bf0b234922931a3b8d1b399334ed7e5ad218a022 Mon Sep 17 00:00:00 2001
+From fd8c649187e3bf7843ea6d68423d71d937452609 Mon Sep 17 00:00:00 2001
 From: Scott K Logan <logans@cottsay.net>
 Date: Tue, 19 Jan 2021 16:23:31 -0800
 Subject: [PATCH] Declare missing dependency on python3-importlib-resources
