@@ -5,7 +5,7 @@ package_name = 'ament_package'
 
 setup(
     name=package_name,
-    version='0.9.4',
+    version='0.11.0',
     packages=find_packages(exclude=['test']),
     data_files=[
         ('share/' + package_name, ['package.xml']),
@@ -15,8 +15,8 @@ setup(
     zip_safe=True,
     author='Dirk Thomas',
     author_email='dthomas@osrfoundation.org',
-    maintainer='Dirk Thomas',
-    maintainer_email='dthomas@osrfoundation.org',
+    maintainer='Mabel Zhang',
+    maintainer_email='mabel@openrobotics.org',
     url='https://github.com/ament/ament_package/wiki',
     download_url='https://github.com/ament/ament_package/releases',
     keywords=['ROS'],

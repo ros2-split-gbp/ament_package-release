@@ -4,11 +4,16 @@
   <!-- Note that changing values in this file may break the tests.
        Tests shall be changed to match the values in this file. -->
   <name>ament_package</name>
-  <version>0.9.4</version>
+  <version>0.11.0</version>
   <description>The parser for the manifest files in the ament buildsystem.</description>
-  <maintainer email="dthomas@osrfoundation.org">Dirk Thomas</maintainer>
+  <maintainer email="mabel@openrobotics.org">Mabel Zhang</maintainer>
+  <maintainer email="audrow@openrobotics.org">Audrow Nash</maintainer>
   <license>Apache License 2.0</license>
 
+  <author email="dthomas@osrfoundation.org">Dirk Thomas</author>
+
+  <depend>python3-importlib-metadata</depend>
+  <depend>python3-importlib-resources</depend>
   <depend>python3-setuptools</depend>
 
   <test_depend>python3-flake8</test_depend>

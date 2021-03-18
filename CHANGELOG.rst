@@ -2,14 +2,25 @@
 Changelog for package ament_package
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
-* Generate Setuptools Dict Helper Method (`#126 <https://github.com/ament/ament_package/issues/126>`_) (`#128 <https://github.com/ament/ament_package/issues/128>`_)
+0.11.0 (2021-03-18)
+-------------------
+* Generate Setuptools Dict Helper Method (`#126 <https://github.com/ament/ament_package/issues/126>`_)
+* Add Audrow as a maintainer (`#127 <https://github.com/ament/ament_package/issues/127>`_)
+* Contributors: Audrow Nash, David V. Lu!!
 
-0.9.3 (2020-12-07)
-------------------
-* make AMENT_TRACE_SETUP_FILES output sourceable (`#120 <https://github.com/ament/ament_package/issues/120>`_) (`#121 <https://github.com/ament/ament_package/issues/121>`_)
-* Contributors: Dirk Thomas
+0.10.1 (2021-01-25)
+-------------------
+* Support Python 3.8-provided importlib.metadata (`#124 <https://github.com/ament/ament_package/issues/124>`_)
+* Declare missing dependency on python3-importlib-resources (`#123 <https://github.com/ament/ament_package/issues/123>`_)
+* Contributors: Scott K Logan
+
+0.10.0 (2020-12-07)
+-------------------
+* make AMENT_TRACE_SETUP_FILES output sourceable (`#120 <https://github.com/ament/ament_package/issues/120>`_)
+* update maintainers
+* Switch ament_package to using importlib. (`#118 <https://github.com/ament/ament_package/issues/118>`_)
+* Add pytest.ini so local tests don't display warning (`#117 <https://github.com/ament/ament_package/issues/117>`_)
+* Contributors: Chris Lalancette, Dirk Thomas, Mabel Zhang
 
 0.9.2 (2020-06-05)
 ------------------

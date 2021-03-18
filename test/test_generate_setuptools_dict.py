@@ -22,10 +22,11 @@ AMENT_PACKAGE_FOLDER = str(pathlib.Path(__file__).parent.parent.resolve())
 
 def common_info_check(result):
     assert result.get('name') == 'ament_package'
-    assert result.get('author') is None
-    assert result.get('author_email') is None
-    assert result.get('maintainer') == 'Dirk Thomas'
-    assert result.get('maintainer_email') == 'dthomas@osrfoundation.org'
+    assert result.get('author') == 'Dirk Thomas'
+    assert result.get('author_email') == 'dthomas@osrfoundation.org'
+    assert result.get('maintainer') == 'Mabel Zhang mabel@openrobotics.org, ' + \
+                                       'Audrow Nash audrow@openrobotics.org'
+    assert result.get('maintainer_email') is None
     assert result.get('description') == \
         'The parser for the manifest files in the ament buildsystem.'
     assert result.get('license') == 'Apache License 2.0'
