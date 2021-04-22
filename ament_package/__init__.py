@@ -16,15 +16,12 @@
 
 # set version number
 try:
+    import pkg_resources
     try:
-        import importlib.metadata as importlib_metadata
-    except ModuleNotFoundError:
-        import importlib_metadata
-    try:
-        __version__ = importlib_metadata.version('ament_package')
-    except importlib_metadata.PackageNotFoundError:
+        __version__ = pkg_resources.require('ament_package')[0].version
+    except pkg_resources.DistributionNotFound:
         __version__ = 'unset'
     finally:
-        del importlib_metadata
+        del pkg_resources
 except ImportError:
     __version__ = 'unset'
