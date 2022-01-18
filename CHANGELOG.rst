@@ -2,21 +2,12 @@
 Changelog for package ament_package
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.14.0 (2022-01-18)
+0.13.0 (2022-01-18)
 -------------------
+* Add support for appending to environment variables (`#130 <https://github.com/ament/ament_package/issues/130>`_) (`#137 <https://github.com/ament/ament_package/issues/137>`_)
+* Update maintainers to Audrow Nash (`#135 <https://github.com/ament/ament_package/issues/135>`_) (`#136 <https://github.com/ament/ament_package/issues/136>`_)
+* Contributors: Scott K Logan, Audrow Nash
 
-0.12.1 (2022-01-14)
--------------------
-* Set forthcoming for previous version
-* Add support for appending to environment variables (`#130 <https://github.com/ament/ament_package/issues/130>`_)
-  This works largely the same as 'prepend-non-duplicate', but instead puts
-  the candidate value at the end of the target variable.
-* Update maintainers to Audrow Nash (`#135 <https://github.com/ament/ament_package/issues/135>`_)
-* Make python executable variable ament_package specific (`#134 <https://github.com/ament/ament_package/issues/134>`_)
-* Contributors: Audrow Nash, Scott K Logan, Shane Loretz
-
-0.12.0 (2022-01-14)
--------------------
 * Revert "Generate Setuptools Dict Helper Method (`#126 <https://github.com/ament/ament_package/issues/126>`_)" (`#131 <https://github.com/ament/ament_package/issues/131>`_)
 * Contributors: Audrow Nash
 
