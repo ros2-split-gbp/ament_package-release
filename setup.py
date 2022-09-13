@@ -5,7 +5,7 @@ package_name = 'ament_package'
 
 setup(
     name=package_name,
-    version='0.15.0',
+    version='0.15.1',
     packages=find_packages(exclude=['test']),
     data_files=[
         ('share/' + package_name, ['package.xml']),
@@ -35,7 +35,6 @@ and provides tooling to build these federated packages together.""",
     package_data={
         'ament_package': [
             'template/environment_hook/*',
-            'template/isolated_prefix_level/*',
             'template/package_level/*',
             'template/prefix_level/*',
         ],
