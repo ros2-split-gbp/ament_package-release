@@ -1,0 +1,224 @@
+ros-rolling-ament-package (0.15.2-1bullseye) bullseye; urgency=high
+
+  * [rolling] Update maintainers - 2022-11-07 (#138 <https://github.com/ament/ament_package/issues/138>)
+  * Contributors: Audrow Nash
+
+ -- Dharini Dutia <dharini@openrobotics.org>  Tue, 14 Feb 2023 00:00:00 -0000
+
+ros-rolling-ament-package (0.15.1-1bullseye) bullseye; urgency=high
+
+  * Mirror rolling to master
+  * Remove unused isolated prefix level templates (#133 <https://github.com/ament/ament_package/issues/133>)
+  * Contributors: Audrow Nash, Shane Loretz
+
+ -- Audrow Nash <audrow@openrobotics.org>  Tue, 13 Sep 2022 00:00:00 -0000
+
+ros-rolling-ament-package (0.15.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- Audrow Nash <audrow@openrobotics.org>  Fri, 29 Apr 2022 00:00:00 -0000
+
+ros-rolling-ament-package (0.14.0-1bullseye) bullseye; urgency=high
+
+
+
+ -- Audrow Nash <audrow@openrobotics.org>  Tue, 18 Jan 2022 00:00:00 -0000
+
+ros-rolling-ament-package (0.12.1-1bullseye) bullseye; urgency=high
+
+  * Set forthcoming for previous version
+  * Add support for appending to environment variables (#130 <https://github.com/ament/ament_package/issues/130>)
+    This works largely the same as 'prepend-non-duplicate', but instead puts
+    the candidate value at the end of the target variable.
+  * Update maintainers to Audrow Nash (#135 <https://github.com/ament/ament_package/issues/135>)
+  * Make python executable variable ament_package specific (#134 <https://github.com/ament/ament_package/issues/134>)
+  * Contributors: Audrow Nash, Scott K Logan, Shane Loretz
+
+ -- Audrow Nash <audrow@openrobotics.org>  Fri, 14 Jan 2022 00:00:00 -0000
+
+ros-rolling-ament-package (0.12.0-1bullseye) bullseye; urgency=high
+
+  * Revert "Generate Setuptools Dict Helper Method (#126 <https://github.com/ament/ament_package/issues/126>)" (#131 <https://github.com/ament/ament_package/issues/131>)
+  * Contributors: Audrow Nash
+
+ -- Audrow Nash <audrow@openrobotics.org>  Fri, 14 Jan 2022 00:00:00 -0000
+
+ros-rolling-ament-package (0.11.0-1bullseye) bullseye; urgency=high
+
+  * Generate Setuptools Dict Helper Method (#126 <https://github.com/ament/ament_package/issues/126>)
+  * Add Audrow as a maintainer (#127 <https://github.com/ament/ament_package/issues/127>)
+  * Contributors: Audrow Nash, David V. Lu!!
+
+ -- Audrow Nash <audrow@openrobotics.org>  Thu, 18 Mar 2021 00:00:00 -0000
+
+ros-rolling-ament-package (0.10.1-1bullseye) bullseye; urgency=high
+
+  * Support Python 3.8-provided importlib.metadata (#124 <https://github.com/ament/ament_package/issues/124>)
+  * Declare missing dependency on python3-importlib-resources (#123 <https://github.com/ament/ament_package/issues/123>)
+  * Contributors: Scott K Logan
+
+ -- Audrow Nash <audrow@openrobotics.org>  Mon, 25 Jan 2021 00:00:00 -0000
+
+ros-rolling-ament-package (0.10.0-1bullseye) bullseye; urgency=high
+
+  * make AMENT_TRACE_SETUP_FILES output sourceable (#120 <https://github.com/ament/ament_package/issues/120>)
+  * update maintainers
+  * Switch ament_package to using importlib. (#118 <https://github.com/ament/ament_package/issues/118>)
+  * Add pytest.ini so local tests don't display warning (#117 <https://github.com/ament/ament_package/issues/117>)
+  * Contributors: Chris Lalancette, Dirk Thomas, Mabel Zhang
+
+ -- Audrow Nash <audrow@openrobotics.org>  Mon, 07 Dec 2020 00:00:00 -0000
+
+ros-rolling-ament-package (0.9.2-1bullseye) bullseye; urgency=high
+
+  * add configure-time flag to skip parent_prefix_path (#115 <https://github.com/ament/ament_package/issues/115>)
+  * Contributors: Dirk Thomas
+
+ -- Audrow Nash <audrow@openrobotics.org>  Fri, 05 Jun 2020 00:00:00 -0000
+
+ros-rolling-ament-package (0.9.1-1bullseye) bullseye; urgency=high
+
+  * [Windows] Fix _ament_python_executable fallback code path. (#113 <https://github.com/ament/ament_package/issues/113>)
+  * Contributors: Dirk Thomas
+
+ -- Audrow Nash <audrow@openrobotics.org>  Tue, 12 May 2020 00:00:00 -0000
+
+ros-rolling-ament-package (0.9.0-1bullseye) bullseye; urgency=high
+
+  * Convert format to f-string. (#112 <https://github.com/ament/ament_package/issues/112>)
+  * Contributors: Dirk Thomas
+
+ -- Audrow Nash <audrow@openrobotics.org>  Fri, 24 Apr 2020 00:00:00 -0000
+
+ros-rolling-ament-package (0.8.8-1bullseye) bullseye; urgency=high
+
+  * fix removing trailing semicolon logic in bat (#111 <https://github.com/ament/ament_package/issues/111>)
+  * Contributors: Dirk Thomas
+
+ -- Audrow Nash <audrow@openrobotics.org>  Tue, 10 Dec 2019 00:00:00 -0000
+
+ros-rolling-ament-package (0.8.7-1bullseye) bullseye; urgency=high
+
+  * fix handling of empty env var (#110 <https://github.com/ament/ament_package/issues/110>)
+  * Contributors: Dirk Thomas
+
+ -- Audrow Nash <audrow@openrobotics.org>  Thu, 05 Dec 2019 00:00:00 -0000
+
+ros-rolling-ament-package (0.8.6-1bullseye) bullseye; urgency=high
+
+  * improve error message when split for dsv line raises (#108 <https://github.com/ament/ament_package/issues/108>)
+  * skip empty lines in dsv files (#107 <https://github.com/ament/ament_package/issues/107>)
+  * fix performance regression in environment setup (#106 <https://github.com/ament/ament_package/issues/106>)
+  * Contributors: Dirk Thomas
+
+ -- Audrow Nash <audrow@openrobotics.org>  Wed, 04 Dec 2019 00:00:00 -0000
+
+ros-rolling-ament-package (0.8.5-1bullseye) bullseye; urgency=high
+
+  * Fix sh command to remove trailing separator (#105 <https://github.com/ament/ament_package/issues/105>)
+  * Always prepend with a trailing separator (#104 <https://github.com/ament/ament_package/issues/104>)
+  * Contributors: Jacob Perron
+
+ -- Audrow Nash <audrow@openrobotics.org>  Fri, 08 Nov 2019 00:00:00 -0000
+
+ros-rolling-ament-package (0.8.4-1bullseye) bullseye; urgency=high
+
+  * add dsv type set-if-unset (#102 <https://github.com/ament/ament_package/issues/102>)
+  * Add support for prepending multiple values to env variables from .dsv files (#101 <https://github.com/ament/ament_package/issues/101>)
+  * Contributors: Dirk Thomas, Jacob Perron, Shane Loretz
+
+ -- Audrow Nash <audrow@openrobotics.org>  Wed, 23 Oct 2019 00:00:00 -0000
+
+ros-rolling-ament-package (0.8.3-1bullseye) bullseye; urgency=high
+
+  * add type 'set' for dsv files (#95 <https://github.com/ament/ament_package/issues/95>)
+  * keep using default ignore list (#96 <https://github.com/ament/ament_package/issues/96>)
+  * Contributors: Dirk Thomas
+
+ -- Audrow Nash <audrow@openrobotics.org>  Fri, 11 Oct 2019 00:00:00 -0000
+
+ros-rolling-ament-package (0.8.2-1bullseye) bullseye; urgency=high
+
+  * provide ament_prepend_unique_value function in prefix level sh script (#94 <https://github.com/ament/ament_package/issues/94>)
+  * Contributors: Dirk Thomas
+
+ -- Audrow Nash <audrow@openrobotics.org>  Fri, 04 Oct 2019 15:45:00 -0000
+
+ros-rolling-ament-package (0.8.1-1bullseye) bullseye; urgency=high
+
+  * fix reading the package run dependencies (#93 <https://github.com/ament/ament_package/issues/93>)
+  * if no package.dsv is available fallback to a local_setup file (#92 <https://github.com/ament/ament_package/issues/92>)
+  * Contributors: Dirk Thomas
+
+ -- Audrow Nash <audrow@openrobotics.org>  Fri, 04 Oct 2019 14:34:00 -0000
+
+ros-rolling-ament-package (0.8.0-1bullseye) bullseye; urgency=high
+
+  * perform environment calculation in Python (#89 <https://github.com/ament/ament_package/issues/89>)
+  * escape closing parenthesis in local_setup.bat file (#91 <https://github.com/ament/ament_package/issues/91>)
+  * add quotes around ament_python_executable variable in local_setup.bat (#90 <https://github.com/ament/ament_package/issues/90>)
+  * fix pytest warning about unknown markers (#88 <https://github.com/ament/ament_package/issues/88>)
+  * install resource marker file for package (#87 <https://github.com/ament/ament_package/issues/87>)
+  * Contributors: Dirk Thomas
+
+ -- Audrow Nash <audrow@openrobotics.org>  Fri, 04 Oct 2019 10:32:00 -0000
+
+ros-rolling-ament-package (0.7.2-1bullseye) bullseye; urgency=high
+
+  * install package manifest (#86 <https://github.com/ament/ament_package/issues/86>)
+  * Contributors: Dirk Thomas
+
+ -- Audrow Nash <audrow@openrobotics.org>  Wed, 18 Sep 2019 00:00:00 -0000
+
+ros-rolling-ament-package (0.7.1-1bullseye) bullseye; urgency=high
+
+  * add warning/fallback for AMENT_CURRENT_PREFIX if relocated (#85 <https://github.com/ament/ament_package/issues/85>)
+  * Contributors: Dirk Thomas
+
+ -- Audrow Nash <audrow@openrobotics.org>  Wed, 21 Aug 2019 00:00:00 -0000
+
+ros-rolling-ament-package (0.7.0-1bullseye) bullseye; urgency=high
+
+  * add section about DCO to CONTRIBUTING.md
+  * Contributors: Dirk Thomas
+
+ -- Audrow Nash <audrow@openrobotics.org>  Mon, 08 Apr 2019 00:00:00 -0000
+
+ros-rolling-ament-package (0.6.0-1bullseye) bullseye; urgency=high
+
+  * Fix lint warnings from invalid escape sequences (#82 <https://github.com/ament/ament_package/issues/82>)
+  * Contributors: Jacob Perron
+
+ -- Audrow Nash <audrow@openrobotics.org>  Tue, 13 Nov 2018 00:00:00 -0000
+
+ros-rolling-ament-package (0.5.2-1bullseye) bullseye; urgency=high
+
+  * fix custom zsh logic for handling arrays (#80 <https://github.com/ament/ament_package/issues/80>)
+  * Contributors: Dirk Thomas
+
+ -- Audrow Nash <audrow@openrobotics.org>  Thu, 19 Jul 2018 00:00:00 -0000
+
+ros-rolling-ament-package (0.5.1-1bullseye) bullseye; urgency=high
+
+  * Use flake8 directly (#77 <https://github.com/ament/ament_package/issues/77>)
+  * Drop dependency on pyparsing. (#78 <https://github.com/ament/ament_package/issues/78>)
+  * Contributors: Steven! Ragnarök
+
+ -- Audrow Nash <audrow@openrobotics.org>  Thu, 14 Jun 2018 00:00:00 -0000
+
+ros-rolling-ament-package (0.5.0-1bullseye) bullseye; urgency=high
+
+  * remove all Python modules by the templates (#75 <https://github.com/ament/ament_package/issues/75>)
+  * add pytest markers to linter tests
+  * support file attribution of license tag (#73 <https://github.com/ament/ament_package/issues/73>)
+  * set zip_safe to avoid warning during installation (#72 <https://github.com/ament/ament_package/issues/72>)
+  * Revert "Revert "consider condition for group membership (#69 <https://github.com/ament/ament_package/issues/69>)" (#70 <https://github.com/ament/ament_package/issues/70>)" (#71 <https://github.com/ament/ament_package/issues/71>)
+  * Revert "consider condition for group membership (#69 <https://github.com/ament/ament_package/issues/69>)" (#70 <https://github.com/ament/ament_package/issues/70>)
+  * consider condition for group membership (#69 <https://github.com/ament/ament_package/issues/69>)
+  * fix copyright year
+  * Contributors: Dirk Thomas, Mikael Arguedas, Tamaki Nishino
+
+ -- Audrow Nash <audrow@openrobotics.org>  Wed, 13 Jun 2018 00:00:00 -0000
+
+
