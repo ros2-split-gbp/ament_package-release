@@ -1,3 +1,26 @@
+## ament_package (rolling) - 0.16.0-1
+
+The packages in the `ament_package` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --rosdistro rolling ament_package` on `Thu, 27 Apr 2023 00:41:49 -0000`
+
+The `ament_package` package was released.
+
+Version of package(s) in repository `ament_package`:
+
+- upstream repository: https://github.com/ament/ament_package.git
+- release repository: https://github.com/ros2-gbp/ament_package-release.git
+- rosdistro version: `0.15.3-1`
+- old version: `0.15.3-1`
+- new version: `0.16.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.11.2`
+- catkin_pkg version: `0.5.2`
+- rosdep version: `0.22.1`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## ament_package (rolling) - 0.15.3-1
 
 The packages in the `ament_package` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --track rolling --rosdistro rolling ament_package` on `Tue, 11 Apr 2023 14:06:01 -0000`
