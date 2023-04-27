@@ -2,6 +2,9 @@
 Changelog for package ament_package
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.16.0 (2023-04-27)
+-------------------
+
 0.15.3 (2023-04-11)
 -------------------
 * Add support for comment lines in dsv files (`#139 <https://github.com/ament/ament_package/issues/139>`_)
